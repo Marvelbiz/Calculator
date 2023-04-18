@@ -1,6 +1,4 @@
-var ScreenInput = document.getElementById('screen');
-
-
+var ScreenInput = document.getElementById("screen");
 
 
 function One(){
@@ -47,6 +45,14 @@ function Dot(){
     ScreenInput.value += ".";
 }
 
+function ClearAll(){
+    ScreenInput.value = "";
+}
+
+function Clear(){
+    ScreenInput.value = ScreenInput.value.slice(0, -1)
+}
+
 function Add(){
     ScreenInput.value += "+";
 }
@@ -55,26 +61,14 @@ function Sub(){
     ScreenInput.value += "-";
 }
 
-function Div(){
-    ScreenInput.value += "/";
-}
-
-function Mod(){
-    ScreenInput.value += "%";
-}
-
 function Mul(){
     ScreenInput.value += "*";
 }
 
+function Div(){
+    ScreenInput.value += "/";
+}
+
 function Equal(){
     ScreenInput.value = eval(ScreenInput.value);
-}
-
-function ClearAll(){
-    ScreenInput.value = "";
-}
-
-function Clear(){
-    ScreenInput.value = String(ScreenInput.value).slice(0, -1)
 }

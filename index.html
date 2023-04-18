@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Calculator</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body>
 
@@ -19,10 +20,11 @@
 
         <div class="button">
 
-            <button class="btn btn-yellow" onclick="Mul()">*</button>
-            <button class="btn btn-yellow" onclick="Add()">+</button>
-            <button class="btn btn-yellow" onclick="Sub()">-</button>
-            <button class="btn btn-yellow" onclick="Div()">/</button>
+            <button class="btn btn-yellow" onclick="Mul()"><i class="fa-solid fa-close"></i></button>
+            <button class="btn btn-yellow" onclick="Add()"><i class="fa-solid fa-plus"></i></button>
+            <button class="btn btn-yellow" onclick="Sub()"><i class="fa-solid fa-minus"></i></button>
+            <button class="btn btn-yellow" onclick="Div()"><i class="fa-solid fa-divide"></i></button>
+            <button class="btn btn-yellow" onclick="Mod()"><i class="fa-solid fa-percent"></i></button>
 
             <button class="btn btn-gray" onclick="Nine()">9</button>
             <button class="btn btn-gray" onclick="Eight()">8</button>
@@ -34,9 +36,9 @@
             <button class="btn btn-gray" onclick="Two()">2</button>
             <button class="btn btn-gray" onclick="One()">1</button>
             <button class="btn btn-gray" onclick="Zero()">0</button>
-            <button class="btn btn-gray" onclick="Dot()">.</button>
+            <button class="btn btn-gray dot" onclick="Dot()">.</button>
 
-            <button class="btn btn-e" onclick="Equal()">=</button>
+            <button class="btn btn-e" onclick="Equal()"><i class="fa-solid fa-equals"></i></button>
             <button class="btn btn-c" onclick="Clear()">C</button>
             <button class="btn btn-c" onclick="ClearAll()">AC</button>
 

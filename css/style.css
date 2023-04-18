@@ -37,13 +37,18 @@
 .btn{
     margin: 5px 0;
     border: 1px solid black;
-    flex: 0 0 22%;
+    /* flex: 0 0 22%; */
     width: 60px;
     height: 52px;
     font-size: 22px;
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 2px 2px 5px white;
+}
+
+.btn:hover{
+    transform: scale(1.1);
 }
 
 .button{
@@ -66,4 +71,7 @@
 .btn-c{
     background-color: rgb(228, 43, 43);
     color: white;
+}
+.dot{
+    font-size: 40px;
 }
